@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Avançada</title>
+    <link rel="stylesheet" href="estilos.css"> <!-- Um arquivo CSS externo -->
+    <script src="scripts.js"></script> <!-- Um arquivo JavaScript externo -->
+    <style>
+        /* Estilos CSS internos para demonstração */
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* Animação de entrada para o cabeçalho */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            animation: fadeIn 2s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="destaque">
+            <h1>Bem-vindo à nossa página!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo justo id tristique.</p>
+            <a href="#" class="botao-destaque">Saiba mais</a>
+        </section>
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="servico">
+                <img src="servico1.jpg" alt="Serviço 1">
+                <h3>Serviço 1</h3>
+                <p>Descrição do Serviço 1.</p>
+            </div>
+            <div class="servico">
+                <img src="servico2.jpg" alt="Serviço 2">
+                <h3>Serviço 2</h3>
+                <p>Descrição do Serviço 2.</p>
+            </div>
+        </section>
+        <section id="carousel">
+            <h2>Imagens em Destaque</h2>
+            <div class="carousel">
+                <img src="imagem1.jpg" alt="Imagem 1">
+                <img src="imagem2.jpg" alt="Imagem 2">
+                <img src="imagem3.jpg" alt="Imagem 3">
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form action="processar_formulario.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Saturn Creative Photos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
