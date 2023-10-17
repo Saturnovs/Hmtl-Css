@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de frequencia</title>
+</head>
+<body>
+    <h1>Lista Frequencia - CVT Maracanaú</h1>
+    <button onclick="mostrarResultado()">
+        Clique para mostrar a lista de frequencia
+    </button>
+
+    <div id="lista">
+        (A lista ira aparecer aqui...)
+    </div>
+    <script>
+        function mostrarResultado() {
+            let lista = "Paulinha, Chirley, Sam";
+            let div =  window.document.getElementById("lista")
+           div.innerText = lista
+
+        }
+    </script>
+</body>
+</html>
